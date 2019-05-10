@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css?family=Questrial|Rajdhani|Gugi|Oswald');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 10vh;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    background: linear-gradient(to left, #c94b4b, #4b134f);
+}
+
+.heading { 
+    font-size: 60px;
+    padding: 20px 40px 20px 40px;
+    font-family: 'Gugi', cursive;
+    color: white;
+}
+
+.random-email {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    align-self: center;
+    position: relative;
+}
+
+input[type = "text"] {
+    width: 400px;
+    height: 48px;
+    border-radius: 10px;
+    border: 2px solid #24252a;
+    outline: none;
+    text-align: right;
+    padding-right: 190px;
+    background-color: #e4f1fe;
+    color: #24252a;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+}
+
+select {
+    position: absolute;
+    left: 410px;
+    top: 16px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 8px;
+    outline: none;
+    background-color: #96281b;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+}
+
+select:hover {
+    cursor: pointer;
+}
+
+.mails {
+    height: 62vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px 0px 20px;
+}
+
+.view-mails {
+    flex: 1;
+}
+
+.section-1 {
+    text-align: center;
+    background-color: #dbe1e6;
+    padding: 4px 0px 4px 0px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.section-2 {
+    overflow-y: scroll;
+    height: 95%;
+}
+
+.section-2::-webkit-scrollbar-track {
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+.section-2::-webkit-scrollbar {
+	width: 8px;
+}
+
+.section-2::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background-color: rgb(165, 112, 112);
+}
+
+.mail {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.mail:hover {
+    cursor: pointer;
+}
+
+.avatar {
+    align-self: center;
+}
+
+.actual-avatar {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    background-color: #1f3a93;
+    border-radius: 50px;
+    position: relative;
+}
+
+.avatar-letter {
+    position: absolute;
+    top: 8px;
+    left: 17px;
+    font-size: 30px;
+    color: white;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.mail-details {
+   padding-left: 10px;
+   font-family: 'Questrial', sans-serif;
+}
+
+.name {
+    padding-bottom: 4px;
+    font-size: 18px;
+}
+
+.subject {
+    width: 100%;
+    max-height: 20px;
+    overflow: hidden;
+    padding-bottom: 2px;
+}
+
+.message {
+    width: 100%;
+    max-height: 15px;
+    overflow: hidden;
+}
+
+.check-mail { 
+    flex: 2;
+    padding: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: rgb(247, 240, 240);
+    border-radius: 5px;
+}
+
+.check-mail::-webkit-scrollbar-track {
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+.check-mail::-webkit-scrollbar {
+	width: 8px;
+}
+
+.check-mail::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background-color: rgb(165, 112, 112);
+}
+
+.mail-subject {
+    font-family: 'Questrial', sans-serif;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.mail-body {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.blank-mail {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    text-align: center;
+    top: 40%;
+    font-size: 30px;
+    color: grey;
+}
+
+/*Loader*/
+
+.loader {
+    border: 5px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 5px solid #3498db;
+    width: 30px;
+    height: 30px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+    margin: 10px;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
